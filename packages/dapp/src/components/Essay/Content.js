@@ -1,7 +1,7 @@
 const Content = () => {
   return (
     <div className='selection:bg-green-300 selection:text-green-900'>
-      <div className='mx-auto flex flex-col px-8 md:px-0 py-16 w-full md:w-[800px] gap-y-12 text-md md:text-2xl font-garamond text-justify items-center justify-center'>
+      <div className='mx-auto flex flex-col px-8 md:px-0 py-16 w-full md:w-[800px] gap-y-12 text-md md:text-2xl font-volkhorn text-justify items-center justify-center'>
         <div>
           Public blockchains present a paradox of ownership. No-one controls them and anyone can use them, given a connection and an ability to speak the common tongue. The network is ownerless, yet anyone who creates a key ‘owns’ any coins associated with it, so everyone is an owner. This confusion reveals how ‘ownership’ is shifting and highlights the opportunity we have to augment our understanding of ‘the ownership economy’ by reimagining what being an owner means.
         </div>
@@ -18,7 +18,7 @@ const Content = () => {
           Is ownership shifting from an ability to demonstrate control or possession to the ability to <a target='_blank' rel='noreferrer' href='https://kernel.community/en/conversation/hospitality/'>make collective meaning</a>? If so, the change in signification is a radical one, because ownership is traditionally about exclusive rights, whereas meaning is made valuable by <a target='_blank' rel='noreferrer' href='https://youtu.be/v2XqrFkyo68?t=1221'>how widely it is shared</a>. The medium may be <a target='_blank' rel='noreferrer' href='https://youtu.be/8ZDEc7uFi64?t=3270'>massaging ownership</a> to mean <a target='_blank' rel='noreferrer' href='https://www.youtube.com/watch?v=U7v63TjdutE&t=2999s'>more that it currently does</a>: “content can now be proliferated instead of protected”.<sup>2</sup> We are crafting increasingly better tools to coordinate around <a href='https://youtu.be/uN4g0Sr3jhs?t=1620'>multiple, simultaneous uses</a>, rather than individual consumption.
         </div>
 
-        <div className='w-max mx-auto pt-16 pb-8 mt-16 flex md:text-6xl text-4xl text-center font-redaction text-gray-800 items-center self-center'>
+        <div className='w-max mx-auto pt-16 pb-8 mt-16 flex md:text-6xl text-4xl text-center font-volkhorn text-gray-800 items-center self-center'>
           The Plural Good
         </div>
 
@@ -36,11 +36,11 @@ const Content = () => {
         </div>
       </div>
 
-      <div className='w-max mx-auto pt-16 pb-8 mt-16 flex md:text-6xl text-4xl text-center font-redaction text-gray-800 items-center self-center'>
+      <div className='w-max mx-auto pt-16 pb-8 mt-16 flex md:text-6xl text-4xl text-center font-volkhorn text-gray-800 items-center self-center'>
         Response-ability
       </div>
 
-      <div className='mx-auto flex flex-col px-8 md:px-0 py-16 w-full md:w-[800px] gap-y-12 text-md md:text-2xl font-garamond text-justify items-center justify-center'>
+      <div className='mx-auto flex flex-col px-8 md:px-0 py-16 w-full md:w-[800px] gap-y-12 text-md md:text-2xl font-volkhorn text-justify items-center justify-center'>
         <div>
           Perhaps this work is not about the right to control, but about cultivating responsibility? It may not seem so at first: phrases like ‘not your keys, not your coins’ are often used by those claiming to be sovereign individuals. If you hold the keys, then you have an absolute and unimpeachable right to sign as you please. It turns out, though, that managing your own keys responsibly is hard. The user experience of this is bad not because we lack great designers, but because responsibility is an inherently difficult feature for which to design.<sup>3</sup> This is because response-ability is not about discrete, individual actions which release the most dopamine, but  <strong>contextual relationships within a network</strong>.
         </div>
@@ -62,11 +62,11 @@ const Content = () => {
         </div>
       </div>
 
-      <div className='w-max mx-auto pt-16 pb-8 mt-16 flex md:text-6xl text-4xl text-center font-redaction text-gray-800 items-center self-center'>
+      <div className='w-max mx-auto pt-16 pb-8 mt-16 flex md:text-6xl text-4xl text-center font-volkhorn text-gray-800 items-center self-center'>
         Re-iterate
       </div>
 
-      <div className='mx-auto flex flex-col px-8 md:px-0 py-16 w-full md:w-[800px] gap-y-12 text-md md:text-2xl font-garamond text-justify items-center justify-center'>
+      <div className='mx-auto flex flex-col px-8 md:px-0 py-16 w-full md:w-[800px] gap-y-12 text-md md:text-2xl font-volkhorn text-justify items-center justify-center'>
         <div>
           All of which brings us back to this <a target='_blank' rel='noreferrer' href='https://videomole.tv/wp-content/uploads/2018/04/JD1972.pdf'>signature event</a>; this singular, personal mark which must be iterated over and over and over again in various shared contracts and contexts. Two wonderful phrases that carry the same kind of paradoxical structure are the isiZulu saying, “<i>umuntu ngumuntu ngabantu</i>”: a human being is only a human being through other human beings, and the <a target='_blank' rel='noreferrer' href='https://www.kernel.community/en/conversation/hospitality/deep-response/#commons--autonomy'>Kanien'kehá:ka</a> phrase “<i>I’ionrhek thiia’tionha’ak nonen tion’kwatorohon</i>”: we are individual but we discover ourselves within the collective. Both sayings hold the possibility and promise of individuation: you can become a full human being; but you can only do so in community. You can only do so through fulfilling your responsibilities in relationship, not through asserting your rights.
         </div>
@@ -84,7 +84,7 @@ const Content = () => {
         </div>
       </div>
 
-      <div className='mx-auto flex flex-col w-full md:w-[600px] gap-y-4 px-8 md:px-0 text-md md:text-2xl font-garamond text-center text-gray-800'>
+      <div className='mx-auto flex flex-col w-full md:w-[600px] gap-y-4 px-8 md:px-0 text-md md:text-2xl font-volkhorn text-center text-gray-800'>
         “Everything depends on the individual human being, regardless of how small a number of like-minded people there are […] on each person […] creatively making the meaning of life a reality in his or her own being.”
         <div className='font-bold'>
           -&nbsp;
@@ -94,11 +94,11 @@ const Content = () => {
         </div>
       </div>
 
-      <div className='w-max mx-auto pt-16 pb-8 mt-16 flex md:text-6xl text-4xl text-center font-redaction text-gray-800 items-center self-center'>
+      <div className='w-max mx-auto pt-16 pb-8 mt-16 flex md:text-6xl text-4xl text-center font-volkhorn text-gray-800 items-center self-center'>
         Song of Signs
       </div>
 
-      <div className='mx-auto flex flex-col px-8 md:px-0 py-16 w-full md:w-[800px] gap-y-12 text-md md:text-2xl font-garamond text-justify items-center justify-center'>
+      <div className='mx-auto flex flex-col px-8 md:px-0 py-16 w-full md:w-[800px] gap-y-12 text-md md:text-2xl font-volkhorn text-justify items-center justify-center'>
         <div>
           The ‘coin’ your key controls comes from the Latin word ‘<i>cuneus</i>’, which once meant ‘cornerstone’. In this single sign is the signal we can use to understand the shifting meaning of ownership. Will your coins be the <a target='_blank' rel='noreferrer' href='https://www.interdependence.online/declaration/e-bw-AGkYsZFYqmAe2771A6hi9ZMIkWrkBNtHIF1hF4'>cornerstones of pluriverses</a>, or the currency of one more unjust and unequal realm?
         </div>
@@ -112,7 +112,7 @@ const Content = () => {
           There is also another connotation waiting for us in the word ‘economy’: to use sparingly. The messages we sign as a means of maintaining our shared record cannot be censored by anyone, but they can be seen by everyone, so be careful what kinds of money you make meaningful. With programmable power comes permanent accountability. To better understand the deeper meaning of 'power', though, we once again turn to the poets:
         </div>
 
-        <div className='mx-auto flex flex-col w-full md:w-[600px] gap-y-4 px-8 md:px-0 text-md md:text-2xl font-garamond text-center text-gray-800'>
+        <div className='mx-auto flex flex-col w-full md:w-[600px] gap-y-4 px-8 md:px-0 text-md md:text-2xl font-volkhorn text-center text-gray-800'>
           “Real power has nothing to do with force, control, status, or money. Real power is the persistent courage to be at ease with the unsolved and the unfinished. To be able to recognise, in the scattered graffiti of your desires, the signature of the eternal.”
           <div className='font-bold'>
             -&nbsp;

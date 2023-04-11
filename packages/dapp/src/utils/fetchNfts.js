@@ -1,13 +1,8 @@
-import { getAllHighlightNfts, getAllSealedNfts, getAllStewardNfts } from './graph'
+import { getAllHighlightNfts, getAllStewardNfts } from './graph'
 
 const highlightNfts = async () => {
   const r = await getAllHighlightNfts()
   return cleanHighlightNfts(r)
-}
-
-const sealedNfts = async () => {
-  const r = await getAllSealedNfts()
-  return cleanSealedNfts(r)
 }
 
 const stewardNfts = async (address) => {
@@ -16,29 +11,13 @@ const stewardNfts = async (address) => {
 }
 
 const cleanStewardNfts = async (data) => {
-  const allSeals = cleanSealedNfts(data?.signatureFunds.map(d => {
-    return {
-      ...d,
-      steward: data.id
-    }
-  }))
   const allHighlights = cleanHighlightNfts(data?.signatureNft.map(d => {
     return {
       ...d,
       steward: data.id
     }
   }))
-  return [allSeals, allHighlights]
-}
-
-const cleanSealedNfts = (data) => {
-  if (!data) return []
-  return data.map((d, k) => {
-    return {
-      ...d,
-      steward: d.steward.id ?? d.steward
-    }
-  })
+  return [allHighlights]
 }
 
 const cleanHighlightNfts = (data) => {
@@ -53,6 +32,5 @@ const cleanHighlightNfts = (data) => {
 
 export {
   highlightNfts,
-  sealedNfts,
   stewardNfts
 }

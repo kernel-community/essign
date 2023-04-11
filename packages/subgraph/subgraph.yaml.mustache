@@ -3,46 +3,24 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum
-    name: SignatureNFT
+    name: Essign
     network: {{network}}
     source:
       address: "{{signatureNFTAddress}}"
-      abi: SignatureNFT
+      abi: Essign
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
-        - SignatureNFT
+        - Essign
         - Account
       abis:
-        - name: SignatureNFT
-          file: ../../packages/hardhat/deployments/{{network}}/SignatureNFT.json
+        - name: Essign
+          file: ../../packages/hardhat/deployments/{{network}}/Essign.json
       eventHandlers:
         - event: NewSignature(address,indexed uint256,uint16,uint16)
           handler: handleNewSignature
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ./src/signatureNFT-mapping.ts
-  - kind: ethereum
-    name: SignatureFund
-    network: {{network}}
-    source:
-      address: "{{signatureFundAddress}}"
-      abi: SignatureFund
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.5
-      language: wasm/assemblyscript
-      entities:
-        - SignatureFund
-        - Account
-      abis:
-        - name: SignatureFund
-          file: ../../packages/hardhat/deployments/{{network}}/SignatureFund.json
-      eventHandlers:
-        - event: SignCreated(indexed address,uint256,indexed uint256,string,string)
-          handler: handleSignCreated
-        - event: Transfer(indexed address,indexed address,indexed uint256)
-          handler: handleTransfer
-      file: ./src/signatureFund-mapping.ts
+      file: ./src/essign-mapping.ts

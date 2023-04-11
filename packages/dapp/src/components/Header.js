@@ -11,7 +11,7 @@ const Header = () => {
     <>
       {/* DESKTOP NAVBAR */}
       <div className='
-        sm:flex flex-row text-gray-800 w-full pt-6 text-lg font-redaction justify-between
+        sm:flex flex-row text-gray-800 w-full pt-6 text-lg font-volkhorn justify-between
         pl-6 gap-2 mx-auto
         hidden
       '
@@ -43,9 +43,9 @@ const Header = () => {
       </div>
 
       {/* MOBILE NAVBAR */}
-      <div className='sm:hidden flex flex-col font-redaction text-xs w-full'>
+      <div className='sm:hidden flex flex-col font-volkhorn text-xs w-full'>
         <div className='
-      flex flex-row justify-between font-redaction pt-6 w-full px-4
+      flex flex-row justify-between font-volkhorn pt-6 w-full px-4
     '
         >
           <div className='flex flex-col'>
@@ -85,21 +85,10 @@ const Items = () => {
         className={`cursor-pointer hover:text-black no-underline ${pathname === '/' ? 'text-black' : 'text-gray-400'}`}
       >
         <div>
-          start
+          read
         </div>
       </Link>
       <div>
-        |
-      </div>
-      <Link
-        to='/essay'
-        className={`cursor-pointer hover:text-black no-underline ${pathname === '/essay' ? 'text-black' : 'text-gray-400'}`}
-      >
-        <div>
-          sign
-        </div>
-      </Link>
-      <div className=''>
         |
       </div>
       <Link
@@ -107,7 +96,7 @@ const Items = () => {
         className={`cursor-pointer hover:text-black no-underline ${pathname === '/signatures' ? 'text-black' : 'text-gray-400'}`}
       >
         <div>
-          explore
+          signatures
         </div>
       </Link>
     </div>

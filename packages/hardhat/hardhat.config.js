@@ -13,8 +13,8 @@ const INFURA_API_KEY = process.env.INFURA_API_KEY || ''
 const MAINNET_PRIVATE_KEY =
     process.env.MAINNET_PRIVATE_KEY ||
     ''
-const RINKEBY_PRIVATE_KEY =
-    process.env.RINKEBY_PRIVATE_KEY ||
+const GOERLI_PRIVATE_KEY =
+    process.env.GOERLI_PRIVATE_KEY ||
     ''
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
 
@@ -26,23 +26,14 @@ task('accounts', 'Prints the list of accounts', async (taskArgs, hre) => {
   }
 })
 
-task('mint', 'Mints a reader-generated SignatureNFT')
+task('mint', 'Mints a reader-generated Essign')
   .addParam('start', 'The character index the highlight starts at')
   .addParam('end', 'The character index the highlight ends at')
   .setAction(async (taskArgs) => {
-    const addressData = require('./deployments/mainnet/SignatureNFT.json')
+    const addressData = require('./deployments/localhost/Essign.json')
     const address = addressData.address
-    const signatureNFT = await ethers.getContractAt('SignatureNFT', address)
+    const signatureNFT = await ethers.getContractAt('Essign', address)
     await signatureNFT.mintSelected(taskArgs.start, taskArgs.end)
-  })
-
-task('createSign', 'Mints a sepcific NFT based on the amount of the donation in ETH')
-  .addParam('selectednft', 'The number, written out in words, of the NFT they have selected to receive in return for their donation')
-  .setAction(async (taskArgs) => {
-    const addressData = require('./deployments/rinkeby/SignatureFund.json')
-    const address = addressData.address
-    const signatureFund = await ethers.getContractAt('SignatureFund', address)
-    await signatureFund.createSign(taskArgs.selectednft, { value: ethers.utils.parseEther('1.5') })
   })
 
 /**
@@ -74,10 +65,9 @@ module.exports = {
       allowUnlimitedContractSize: true,
       initialBaseFeePerGas: 0 // https://github.com/sc-forks/solidity-coverage/issues/652
     },
-    rinkeby: {
-      url: `https://rinkeby.infura.io/v3/${INFURA_API_KEY}`,
-      accounts: [RINKEBY_PRIVATE_KEY],
-      gasPrice: 10000000000
+    goerli: {
+      url: `https://goerli.infura.io/v3/${INFURA_API_KEY}`,
+      accounts: [GOERLI_PRIVATE_KEY]
     },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${INFURA_API_KEY}`,

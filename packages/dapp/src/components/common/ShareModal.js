@@ -5,7 +5,7 @@ import shareTweet from '../../utils/twitter'
 
 const Message = ({ url }) => {
   return (
-    <div className='pt-4 text-center opacity-30 font-garamond'>
+    <div className='pt-4 text-center opacity-30 font-volkhorn'>
       Transaction Submitted
       <div>
         View on&nbsp;
@@ -21,7 +21,7 @@ const Share = ({ url, onClose, image, message, shareOnTwitter }) => {
   const {data} = useAccount()
   return (
     <Modal>
-      <div className='p-8 w-full h-min-content sm:w-96 my-auto rounded-lg shadow-xl bg-white font-garamond text-lg backdrop-blur-lg'>
+      <div className='p-8 w-full h-min-content sm:w-96 my-auto rounded-lg shadow-xl bg-white font-volkhorn text-lg backdrop-blur-lg'>
         <div className='flex flex-col gap-2'>
           {
             image &&

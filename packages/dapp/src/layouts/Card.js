@@ -26,7 +26,7 @@ const Card = ({
           <div className='flex flex-row w-full justify-between items-center h-12 p-2 border-t-0 border-2'>
             {showAddress &&
             (
-              <div className='text-black/60 font-redaction'>
+              <div className='text-black/60 font-volkhorn'>
                 {toDisplay}
               </div>
             )}

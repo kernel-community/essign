@@ -1,6 +1,6 @@
 const HeaderPoem = () => {
   return (
-    <div className='flex flex-col pb-16 gap-y-12 text-md md:text-2xl font-garamond text-center items-center justify-center'>
+    <div className='flex flex-col pb-16 gap-y-12 text-md md:text-2xl font-volkhorn text-center items-center justify-center'>
       <div>
         To bear and not to own; <br /> to act and not lay claim;
         <br /> to do the work and let it go:

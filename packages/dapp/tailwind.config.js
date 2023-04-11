@@ -5,9 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        garamond: ['EB Garamond', 'sans-serif'],
-        redaction: ['Redaction', 'sans-serif'],
-        syne: ['Syne', 'sans-serif']
+        volkhorn: ['Volkhorn', 'sans-serif']
       }
     }
   },

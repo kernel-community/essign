@@ -10,8 +10,8 @@ const styles = {
     disabled: 'sm:w-32 sm:px-4 sm:py-2 w-24 px-2 py-1 border-2 border-gray-200 rounded-md hover:border-gray-400 transition-all cursor-wait flex justify-center'
   },
   big: {
-    main: 'select-none text-center border-gray-600 sm:px-4 py-2 px-2 sm:w-64 border-2 rounded-md hover:border-black font-redaction cursor-pointer text-sm sm:text-base',
-    disabled: 'bg-gray-300 select-none text-center border-gray-600 sm:px-4 py-2 px-2 sm:w-64 border-2 rounded-md hover:border-black font-redaction text-sm sm:text-base'
+    main: 'select-none text-center border-gray-600 sm:px-4 py-2 px-2 sm:w-64 border-2 rounded-md hover:border-black font-volkhorn cursor-pointer text-sm sm:text-base',
+    disabled: 'bg-gray-300 select-none text-center border-gray-600 sm:px-4 py-2 px-2 sm:w-64 border-2 rounded-md hover:border-black font-volkhorn text-sm sm:text-base'
   }
 }
 
@@ -55,7 +55,7 @@ const ExecutionButton = ({
           {loading ? <Spinner /> : ''}
           {text}
         </div>
-        {isError ? <span className='text-red-600 font-garamond text-lg'>there was an error</span> : <></>}
+        {isError ? <span className='text-red-600 font-volkhorn text-lg'>there was an error</span> : <></>}
       </>
     )
   } else if (tween) {

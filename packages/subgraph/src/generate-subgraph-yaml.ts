@@ -9,13 +9,11 @@ fs.readFile('./subgraph.yaml.mustache', async function(err, data) {
     for (const chainId of chainIds) {
         const networkMappingForChain = networkMapping[chainId as keyof typeof networkMapping];
         const networkName = networkMappingForChain[0]['name'];
-        const signatureNFTMapping = networkMappingForChain[0]['contracts']['SignatureNFT'];
-        const signatureFundMapping = networkMappingForChain[0]['contracts']['SignatureFund'];
+        const EssignMapping = networkMappingForChain[0]['contracts']['Essign']; 
 
         const out = Mustache.render(data.toString(), {
             network: networkName,
-            signatureNFTAddress: signatureNFTMapping.address,
-            signatureFundAddress: signatureFundMapping.address,
+            essignAddress: EssignMapping.address,
         });
 
         fs.writeFileSync(

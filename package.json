@@ -1,12 +1,14 @@
 {
-  "name": "signature-economies",
-  "version": "0.0.9",
-  "description": "Meaningful economies of sign",
+  "name": "essign",
+  "version": "0.0.1",
+  "description": "Meaningfully simple signature economies",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kernel-community/signature-economies.git"
+    "url": "git+https://github.com/kernel-community/essign.git"
   },
   "keywords": [
     "signatures",
@@ -16,37 +18,18 @@
   "author": "andytudhope, angelagilhotra, malayvasa, danishabbir, noskovvkirill",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kernel-community/signature-economies/issues"
+    "url": "https://github.com/kernel-community/essign/issues"
   },
-  "homepage": "https://github.com/kernel-community/signature-economies#readme",
+  "homepage": "https://github.com/kernel-community/essign#readme",
   "scripts": {
-    "dapp:start": "yarn workspace dapp start",
-    "dapp:build": "yarn workspace dapp build",
-    "dapp:test": "yarn workspace dapp test",
-    "dapp:format": "yarn workspace dapp format",
-    "dapp:lint": "yarn workspace dapp lint",
-    "hardhat:clean": "yarn workspace hardhat clean",
-    "hardhat:compile": "yarn workspace hardhat compile",
-    "hardhat:watch": "yarn workspace hardhat watch",
-    "hardhat:localnode": "yarn workspace hardhat localnode",
-    "hardhat:test": "yarn workspace hardhat test",
-    "hardhat:coverage": "yarn workspace hardhat coverage",
-    "hardhat:deploylocal": "yarn workspace hardhat deploylocal",
-    "hardhat:mintlocal": "yarn workspace hardhat mintlocal",
-    "hardhat:signlocal": "yarn workspace hardhat signlocal",
-    "hardhat:deployrinkeby": "yarn workspace hardhat deployrinkeby",
-    "hardhat:mintrinkeby": "yarn workspace hardhat mintrinkeby",
-    "hardhat:signrinkeby": "yarn workspace hardhat signrinkeby",
-    "hardhat:deploymain": "yarn workspace hardhat deploymain",
-    "hardhat:mintmain": "yarn workspace hardhat mintmain",
-    "hardhat:accounts": "yarn workspace hardhat accounts",
-    "hardhat:check": "yarn workspace hardhat checksol",
-    "hardhat:lint": "yarn workspace hardhat lint",
+    "start": "yarn workspace dapp start",
+    "build": "yarn workspace dapp build",
+    "format": "yarn workspace dapp format",
+    "lint": "yarn workspace dapp lint",
+    "test": "yarn workspace hardhat test",
+    "localnode": "yarn workspace hardhat localnode",
+    "deployl": "yarn workspace hardhat deployl",
     "mettasign:start": "yarn workspace metta-sign start",
-    "mettasign:build": "yarn workspace metta-sign build",
-    "subgraph:createlocal": "yarn workspace subgraph create:local",
-    "subgraph:deploylocal": "yarn workspace subgraph deploy:local",
-    "subgraph:createrinkeby": "yarn workspace subgraph create:rinkeby",
-    "subgraph:deployrinkeby": "yarn workspace subgraph deploy:rinkeby"
+    "mettasign:build": "yarn workspace metta-sign build"
   }
 }

@@ -10,7 +10,7 @@ const SwitchNetworkModal = () => {
   if (!state.modal) return
   return (
     <Modal bringToFront>
-        <div className='p-8 w-full h-min-content sm:w-80 my-auto rounded-lg shadow-xl bg-white font-garamond text-lg backdrop-blur-lg'>
+        <div className='p-8 w-full h-min-content sm:w-80 my-auto rounded-lg shadow-xl bg-white font-volkhorn text-lg backdrop-blur-lg'>
           <div>
             Please switch to&nbsp;
           </div>

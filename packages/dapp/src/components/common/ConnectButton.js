@@ -13,7 +13,7 @@ const base = `
   sm:px-4 sm:py-2
   sm:shadow sm:shadow-gray-300
   sm:transition-all
-  font-redaction
+  font-volkhorn
 
   hover:shadow-md
   hover:shadow-gray-500

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useAccount, useProvider } from 'wagmi'
-import { lookUpEns } from '../utils/signatures'
+import { lookUpEns } from '../utils/ens'
 
 export const useDisplayableAddress = (account = undefined) => {
   const { data, isError } = useAccount()
