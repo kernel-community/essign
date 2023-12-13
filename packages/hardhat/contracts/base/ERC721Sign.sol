@@ -8,12 +8,8 @@ pragma solidity 0.8.7;
 
 import { ERC721 } from "./ERC721.sol";
 import { ERC721URIStorage } from "./ERC721URIStorage.sol";
-import { ERC2981ContractWideRoyalties, ERC2981Royalties } from "./ERC2981ContractWideRoyalties.sol";
 
-contract ERC721Sign is 
-    ERC721URIStorage,
-    ERC2981ContractWideRoyalties 
-{
+contract ERC721Sign is ERC721URIStorage {
 
     constructor(
         string memory _name,
@@ -40,7 +36,7 @@ contract ERC721Sign is
     function supportsInterface(bytes4 interfaceId)
         public
         view
-        override(ERC721, ERC2981Royalties)
+        override(ERC721)
         returns (bool)
     {
         return super.supportsInterface(interfaceId);

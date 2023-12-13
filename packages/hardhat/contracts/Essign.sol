@@ -33,17 +33,17 @@ contract Essign is ERC721Sign {
     // maps tokenId to the start and end of the highlighted text
     mapping(uint256 => Highlight) public selection;
 
-    // stores IPFS gateway, in case it ever changes. Change to ipfs:// before deploying.
-    string public gateway = "https://ipfs.io/ipfs/";
+    // stores IPFS gateway, in case it ever changes.
+    string public gateway = "ipfs://";
 
     // stores hash of image generator app. Update all three below before deploying.
     string public imgHash = "QmYHGGTbqwFtfLFhhAKojVbmJwkVMNyqrniG9HLL1PYpyD";
 
     // stores an arweave backup of the image generator for the external url metadata
-    string public backup = "https://arweave.net/0b5HtyTwPgtWY72OENfI3Jz7ugkCzYDKcnRkpgLCx64";
+    string public backup = "https://arweave.net/";
 
-    // stores a reference to the essay text
-    string public essay = "https://arweave.net/wmn665qjC5J58QyFvaSJNEUpCmss1rfF-1b6xbTsxp4";
+    // stores a reference to the text
+    string public essay = "https://arweave.net/";
 
     // An address for proper attribution
     address public creator;
@@ -73,17 +73,6 @@ contract Essign is ERC721Sign {
     {
         return
             "https://arweave.net/";
-    }
-
-    /** @notice          Set the royalties for the whole contract.
-     *  @param recipient the royalties recipient
-     *  @param value     royalties value (between 0 and 10000)
-     */
-    function setRoyalties(address recipient, uint256 value)
-        external
-        onlyCreator
-    {
-        _setRoyalties(recipient, value);
     }
 
     /**
